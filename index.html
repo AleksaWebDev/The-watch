@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The watch</title>
+
+  <link rel="stylesheet" href="jquery-ui.structure.min.css">
+  <link rel="stylesheet" href="jquery-ui.theme.min.css">
+  <link rel="stylesheet" href="style.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+  <script src="script.js"></script>
+</head>
+<body>
+
+  <div id="description" title="The watch" class="description">
+    <ul>
+      <li><span>To open the watch</span> - click on the lid.</li>
+      <li><span>To close the watch</span> - click on the button.</li>
+    </ul>
+  </div>
+
+  <div class="container">
+    <div class="wrapper">
+    <div class="watch">
+      <div class="watch__button-wheel"></div>
+      <div class="watch__button-close-lid"></div>
+
+      <div class="watch__background-dial">
+        <div id="clock-face" class="watch__clock-face">
+          <div class="watch__date-days">
+            <div class="watch__day-of-week" id="day-of-week"></div>
+            <div class="watch__day" id="curr-day"></div>
+          </div>
+          <div class="watch__date-m-y">
+            <div class="watch__month" id="curr-month"></div>
+            <div class="watch__year" id="curr-year"></div>
+          </div>
+
+          <div class="watch__sound">
+            <input id="sound" type="checkbox" name="sound">
+            <label for="sound">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="watch__volume-img" viewBox="0 0 16 16">
+                <path d="M11.536 14.01A8.473 8.473 0 0 0 14.026 8a8.473 8.473 0 0 0-2.49-6.01l-.708.707A7.476 7.476 0 0 1 13.025 8c0 2.071-.84 3.946-2.197 5.303l.708.707z"/>
+                <path d="M10.121 12.596A6.48 6.48 0 0 0 12.025 8a6.48 6.48 0 0 0-1.904-4.596l-.707.707A5.483 5.483 0 0 1 11.025 8a5.483 5.483 0 0 1-1.61 3.89l.706.706z"/>
+                <path d="M8.707 11.182A4.486 4.486 0 0 0 10.025 8a4.486 4.486 0 0 0-1.318-3.182L8 5.525A3.489 3.489 0 0 1 9.025 8 3.49 3.49 0 0 1 8 10.475l.707.707zM6.717 3.55A.5.5 0 0 1 7 4v8a.5.5 0 0 1-.812.39L3.825 10.5H1.5A.5.5 0 0 1 1 10V6a.5.5 0 0 1 .5-.5h2.325l2.363-1.89a.5.5 0 0 1 .529-.06z"/>
+              </svg>
+            </label>
+          </div>
+
+          <div class="watch__arrow-minute"></div>
+          <div class="watch__arrow-hour"></div>
+          <div class="watch__arrow-second"></div>
+          <div class="watch__dot-center"></div>
+        </div>
+      </div>
+
+      <div class="watch__loop-top"></div>
+      <div class="watch__loop-bottom"></div>
+      
+      <div class="watch__lid-loop-cylinder"></div>
+      <div class="watch__lid-loop">
+        <div class="watch__lid-inner"></div>
+        <div id="watch-lid" class="watch__lid-outer"></div>
+      </div>
+      
+    </div>
+    </div>
+  </div>
+</body>
+</html>
